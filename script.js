@@ -12,4 +12,3 @@ import "./style.scss";
   Put the JavaScript code you want below.
 */
 
-console.log("Hey look in your browser console. It works!");
