@@ -11,5 +11,28 @@ import "./style.scss";
 /*
   Put the JavaScript code you want below.
 */
+document.querySelector("#buttonAdd").addEventListener("click",() => {
+  var n1 = parseFloat(document.getElementById('textOne').value);
+  var n2 = parseFloat(document.getElementById('textTwo').value);
+  document.querySelector("#result").value=n1 + n2;
+});
 
-console.log("Hey look in your browser console. It works!");
+document.querySelector("#buttonSub").addEventListener("click",() => {
+  var n1 = parseFloat(document.getElementById('textOne').value);
+  var n2 = parseFloat(document.getElementById('textTwo').value);
+  document.querySelector("#result").value=n1 - n2;
+});
+
+
+document.querySelector("#buttonMul").addEventListener("click",() => {
+  var n1 = parseFloat(document.getElementById('textOne').value);
+  var n2 = parseFloat(document.getElementById('textTwo').value);
+  document.querySelector("#result").value=n1 * n2;
+});
+
+
+document.querySelector("#buttonSou").addEventListener("click",() => {
+  var n1 = parseFloat(document.getElementById('textOne').value);
+  var n2 = parseFloat(document.getElementById('textTwo').value);
+  document.querySelector("#result").value=n1 / n2;
+});
